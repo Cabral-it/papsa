@@ -1,8 +1,9 @@
 <?php
 
+use Tabuna\Breadcrumbs\Trail;
+use App\Http\Controllers\PlainteController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\TermsController;
-use Tabuna\Breadcrumbs\Trail;
 
 /*
  * Frontend Controllers
@@ -20,3 +21,6 @@ Route::get('terms', [TermsController::class, 'index'])
         $trail->parent('frontend.index')
             ->push(__('Terms & Conditions'), route('frontend.pages.terms'));
     });
+
+
+Route::post('/plainte', [PlainteController::class, 'store'])->name('plaintes.store');

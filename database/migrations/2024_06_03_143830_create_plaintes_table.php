@@ -48,7 +48,7 @@ class CreatePlaintesTable extends Migration
             // Section 4 Coordonnées GPS de la réclamation
             $table->string('latitude')->nullable();
             $table->string('longitude')->nullable();
-            $table->string('alttitude')->nullable();
+            $table->string('altitude')->nullable();
             $table->string('precision')->nullable();
 
             $table->timestamps();

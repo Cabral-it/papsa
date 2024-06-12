@@ -6,3 +6,191 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+/* Injected CSS Code */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 80%;
+}
+
+.logo {
+    position: relative;
+    z-index: 1;
+}
+
+.senegal {
+    height: 100px;
+    width: auto;
+}
+
+.bm {
+    height: 100px;
+    width: 125px;
+}
+
+.bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+  }
+  .bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+  }
+
+
+.sgp {
+
+    // background-color: rgb(88, 187, 226);
+    // margin: 0;
+    // padding: 0;
+    // background-image: url('../senegalaise.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
+
+    // min-height: 100%;
+
+    // -webkit-background-size: cover;
+    // -moz-background-size: cover;
+    // -o-background-size: cover;
+
+}
+
+.h1-heading {
+    font-size: 7rem;
+}
+
+/*PREFERENCES STYLE*/
+.form-all {
+    font-family: Inter, sans-serif;
+}
+
+.form-label.form-label-auto {
+
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+
+}
+
+.form-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.form-all {
+    max-width: 752px;
+    width: 100%;
+}
+
+.form-label.form-label-left,
+.form-label.form-label-right,
+.form-label.form-label-left.form-label-auto,
+.form-label.form-label-right.form-label-auto {
+    width: 230px;
+}
+
+.form-all {
+    font-size: 16px
+}
+
+.supernova .form-all, .form-all {
+    background-color: #FFFFFF;
+}
+
+.form-all {
+    color: #2C3345;
+}
+.form-header-group .form-header {
+    color: #2C3345;
+}
+.form-header-group .form-subHeader {
+    color: #2C3345;
+}
+.form-label-top,
+.form-label-left,
+.form-label-right,
+.form-html,
+.form-checkbox-item label,
+.form-radio-item label,
+span.FITB .qb-checkbox-label,
+span.FITB .qb-radiobox-label,
+span.FITB .form-radio label,
+span.FITB .form-checkbox label,
+[data-blotid][data-type=checkbox] [data-labelid],
+[data-blotid][data-type=radiobox] [data-labelid],
+span.FITB-inptCont[data-type=checkbox] label,
+span.FITB-inptCont[data-type=radiobox] label {
+    color: #2C3345;
+}
+.form-sub-label {
+    color: #464d5f;
+}
+
+.supernova {
+    background-color: #F3F3FE;
+}
+.supernova body {
+    background: transparent;
+}
+
+.form-textbox,
+.form-textarea,
+.form-dropdown,
+.form-radio-other-input,
+.form-checkbox-other-input,
+.form-captcha input,
+.form-spinner input {
+    background-color: #FFFFFF;
+}
+
+.supernova {
+    background-image: none;
+}
+#stage {
+    background-image: none;
+};
+
+.form-all {
+    background-image: none;
+}
+
+.form-all {
+    position: relative;
+}
+.form-all:before {
+    content: "";
+    background-image: url("https://www.jotform.com/uploads/joeciss//* form_files/logoprocasef.64ddf893672a42.62194938.jpg */");
+    display: inline-block;
+    height: 109.21985815602837px;
+    position: absolute;
+    background-size: 420px 109px;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.form-all {
+    margin-top: 129px;
+}
+.form-all:before {
+    top: -119px;
+    background-position: top center;
+    left: 0;
+}
+/*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+/* Injected CSS Code */
