@@ -2,37 +2,37 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Projet;
+use App\Models\Region;
+use App\Models\Departement;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Plainte extends Model
 {
     use HasFactory;
 
     public $fillable = [
-        "localite",
-        "commune",
-        "departement",
-        "region",
-        "prenom",
-        "name",
-        "fonction",
-        "identification_numero",
-        "entreprise_name",
-        "entreprise_contact",
-        "entreprise_telephone",
-        "entreprise_email",
-        "reclamation_synthese",
-        "incident_date",
-        "incident_description",
-        "incident_happen",
-        "incident_lieu",
-        "incident_victime",
-        "consequences",
-        "solution",
-        "latitude",
-        "longitude",
-        "altitude",
-        "precision",
+        'localite',
+        'commune',
+        'departement',
+        'region',
+
+        'prenom',
+        'name',
+        'fonction',
+        'solution',
     ];
+
+    public function projet() {
+        return $this->belongsTo(Projet::class);
+    }
+
+    public function departement() {
+        return $this->bolongsTo(Departement::class);
+    }
+
+    public function region() {
+        return $this->belongsTo(Region::class);
+    }
 }

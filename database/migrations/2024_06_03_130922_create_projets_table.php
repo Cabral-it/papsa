@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReclamationsTable extends Migration
+class CreateProjetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,8 @@ class CreateReclamationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('reclamations', function (Blueprint $table) {
+        Schema::create('projets', function (Blueprint $table) {
             $table->id();
-            $table->boolean('type');
             $table->string('libele');
             $table->timestamps();
         });
@@ -28,6 +27,6 @@ class CreateReclamationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reclamations');
+        Schema::dropIfExists('projets');
     }
 }
