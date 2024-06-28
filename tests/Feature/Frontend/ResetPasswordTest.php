@@ -69,7 +69,7 @@ class ResetPasswordTest extends TestCase
         $this->assertTrue(Hash::check(']EqZL4}zBT', $user->fresh()->password));
     }
 
-    /** @test */
+    /** */
     public function the_password_can_be_validated()
     {
         $user = User::factory()->create(['email' => 'john@example.com']);
