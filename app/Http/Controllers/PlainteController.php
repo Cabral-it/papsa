@@ -7,8 +7,13 @@ use Illuminate\Http\Request;
 
 class PlainteController extends Controller
 {
+    public function index()
+    {
+        return view('Frontend.pages.plainte');
+    }
     public function store(Request $request)
     {
+
         // dd($request->all());
         // Validation formulaire
         $this->validate($request, [
@@ -22,6 +27,7 @@ class PlainteController extends Controller
             'commune' => $request->commune,
             'departement' => $request->localite,
             'region' => $request->region,
+            'projetconcerne' => $request->projetconcerne,
             'prenom' => $request->prenom,
             'nom' => $request->q9_prenomsamp['last'],
             'sexe' => $request->sexe = 1 ? true : false ,
