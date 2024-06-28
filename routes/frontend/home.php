@@ -24,3 +24,5 @@ Route::get('terms', [TermsController::class, 'index'])
 
 
 Route::post('/plainte', [PlainteController::class, 'store'])->name('plaintes.store');
+
+Route::get('/plainte', [PlainteController::class, 'index'])->name('plaintes.index');
