@@ -6,11 +6,9 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ appName() }} | @yield('title')</title>
 
-         <meta name="description" content="@yield('meta_description', appName())">
-        <meta name="author" content="@yield('meta_author', 'Anthony Rappa')">
+        <meta name="description" content="@yield('meta_description', appName())">
+        <meta name="author" content="@yield('meta_author', 'Abdourahmane DIOP')">
         @yield('meta')
-
-       
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -24,45 +22,36 @@
         <link href="{{ asset('style.css') }}" rel="stylesheet" />
         @stack('after-styles')
         <!-- Core theme CSS (includes Bootstrap)-->
-       
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg fixed-top text-primary" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="..." /></a>
+                <a class="navbar-brand" href="#page-top"><img src="{{ asset('images/logo-papsa.png') }}" alt="PAPSA LOGO" />PAPSA</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#services">Projet</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Accueil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Le Projet</a></li>
                         <li class="nav-item"><a class="nav-link" href="#portfolio">Actualites</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about">MGP</a></li>
                         <li class="nav-item"><a class="nav-link" href="#team">Mediatique</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">MGP</a></li>
                     </ul>
                 </div>
             </div>
+            {{-- @include('includes.partials.announcements') --}}
         </nav>
 
         @include('includes.partials.read-only')
         @include('includes.partials.logged-in-as')
-        
 
-        {{-- @include('includes.partials.announcements') --}}
-        
         @include('includes.partials.messages')
 
         @yield('content')
-        
-
-
-
-
-
-      
 
         @stack('before-scripts')
           <!-- Bootstrap core JS-->

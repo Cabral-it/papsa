@@ -3,15 +3,33 @@
 @section('title', 'PAPSA')
 
 @section('content')
-        
+
         <!-- Masthead-->
         <header class="masthead">
             <div class="container">
-                <div class="masthead-subheading">Welcome To Our Studio!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="masthead-subheading">PROJET D'APPUI A LA PROTECTION SOCIALE ADAPTATIVE</div>
+                <div class="masthead-heading text-uppercase">PAPSA</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Découvrez le projet</a>
             </div>
         </header>
+        {{-- about --}}
+        <section class="page-section">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase text-primary">A propos</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/bm-logo.png    " alt="poor" srcset="poor">
+                    </div>
+                    <div class="col-md-6">
+                        <p class="pt-2 display-6">Le PAPSA vise à renforcer les principaux outils du système de protection sociale sénégalais.</p>
+                        <p>Il vise aussi à soutenir les programmes d'inclusion économique pour les pauvres chroniques (Yokk Koom Koom et les programmes de résilience agricole), à financer des programmes de réponses aux chocs pour les ménages vulnérables, en particulier pour les chocs climatiques, et à fournir un appui institutionnel et un renforcement des capacités pour le secteur de la protection sociale.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {{-- end about --}}
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container">
@@ -24,19 +42,19 @@
                         <img src="{{ asset('assets/img/portfolio/1.jpg') }}" width="50%" class="img" alt="image"/>
                         <h5 class="my-3">Visite de Mme le ministre dans les bureaux de PAPSA</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
-                        <a class="btn btn-success">Voir plus</a>
+                        <a class="btn btn-primary">Voir plus</a>
                     </div>
                     <div class="col-md-4">
                          <img src="{{ asset('assets/img/portfolio/1.jpg') }}" width="50%" class="img" alt="image"/>
                         <h5 class="my-3">Visite de Mme le ministre dans les bureaux de PAPSA</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
-                        <a class="btn btn-success">Voir plus</a>
+                        <a class="btn btn-primary">Voir plus</a>
                     </div>
                     <div class="col-md-4">
                          <img src="{{ asset('assets/img/portfolio/1.jpg') }}" width="50%" class="img" alt="image"/>
                         <h5 class="my-3">Visite de Mme le ministre dans les bureaux de PAPSA</h5>
                         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur.</p>
-                        <a class="btn btn-success">Voir plus</a>
+                        <a class="btn btn-primary">Voir plus</a>
                     </div>
                 </div>
             </div>
@@ -559,5 +577,5 @@
                 </div>
             </div>
         </div>
-        
+
 @endsection
