@@ -33,75 +33,62 @@ class DatabaseSeeder extends Seeder
         $this->call(AuthSeeder::class);
         $this->call(AnnouncementSeeder::class);
 
-        // Seed des regions
+        // Seed des regions et departements
         $region = Region::create(['libele' => 'Dakar']);
         $region->departements()->create(['libele' => 'Dakar']);
         $region->departements()->create(['libele' => 'Guédiawaye']);
         $region->departements()->create(['libele' => 'Pikine']);
         $region->departements()->create(['libele' => 'Rufisque']);
-
         $region = Region::create(['libele' =>'Diourbel']);
         $region->departements()->create(['libele' => 'Bambey']);
         $region->departements()->create(['libele' => 'Diourbel']);
         $region->departements()->create(['libele' => 'Mbacké']);
-
         $region = Region::create(['libele' => 'Fatick']);
         $region->departements()->create(['libele' => 'Fatick']);
         $region->departements()->create(['libele' => 'Foundiougne']);
         $region->departements()->create(['libele' => 'Gossas']);
-
         $region = Region::create(['libele' => 'Kaffrine']);
         $region->departements()->create(['libele' => 'Birkilane']);
         $region->departements()->create(['libele' => 'Kaffrine']);
         $region->departements()->create(['libele' => 'Malem-Hodar']);
         $region->departements()->create(['libele' => 'Koungheul']);
-
         $region = Region::create(['libele' => 'Kaolack']);
         $region->departements()->create(['libele' => 'Kaolack']);
         $region->departements()->create(['libele' => 'Guinguinéo']);
         $region->departements()->create(['libele' => 'Nioro du Rip']);
-
         $region = Region::create(['libele' => 'Kédougou']);
         $region->departements()->create(['libele' => 'Kédougou']);
         $region->departements()->create(['libele' => 'Salemata']);
         $region->departements()->create(['libele' => 'Saraya']);
-
         $region = Region::create(['libele' => 'Kolda']);
         $region->departements()->create(['libele' => 'Kolda']);
         $region->departements()->create(['libele' => 'Vélingara']);
         $region->departements()->create(['libele' => 'Médina Yoro Foulah']);
-
         $region = Region::create(['libele' => 'Louga']);
         $region->departements()->create(['libele' => 'Kébémer']);
         $region->departements()->create(['libele' => 'Linguère']);
         $region->departements()->create(['libele' => 'Louga']);
-
         $region = Region::create(['libele' => 'Matam']);
         $region->departements()->create(['libele' => 'Kanel']);
         $region->departements()->create(['libele' => 'Matam']);
         $region->departements()->create(['libele' => 'Ranérou']);
-
         $region = Region::create(['libele' => 'Saint-Louis']);
         $region->departements()->create(['libele' => 'Dagana']);
         $region->departements()->create(['libele' => 'Podor']);
         $region->departements()->create(['libele' => 'Saint-Louis']);
-
         $region = Region::create(['libele' => 'Sédhiou']);
         $region->departements()->create(['libele' => 'Bounkiling']);
         $region->departements()->create(['libele' => 'Goudomp']);
         $region->departements()->create(['libele' => 'Sédhiou']);
-
         $region = Region::create(['libele' => 'Tambacounda']);
         $region->departements()->create(['libele' => 'Bakel']);
         $region->departements()->create(['libele' => 'Koumpentoum']);
         $region->departements()->create(['libele' => 'Tambacounda']);
         $region->departements()->create(['libele' => 'Goudiry']);
-
         $region = Region::create(['libele' => 'Thiès']);
         $region->departements()->create(['libele' => 'Mbour']);
         $region->departements()->create(['libele' => 'Thiès']);
         $region->departements()->create(['libele' => 'Tivaouane']);
-
         $region = Region::create(['libele' => 'Ziguinchor']);
         $region->departements()->create(['libele' => 'Bignogna']);
         $region->departements()->create(['libele' => 'Oussouye']);
