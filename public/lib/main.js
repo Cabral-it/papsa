@@ -1,13 +1,3 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-// require('../bootstrap');
-// // require('../plugins');
-
-
-
 (function ($) {
     "use strict";
 
@@ -23,13 +13,10 @@
 
 
     // Fixed Navbar
-    alert('test');
-
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
             $('.fixed-top .container').addClass('shadow-sm').css('max-width', '100%');
         } else {
-            // console.log('error');
             $('.fixed-top .container').removeClass('shadow-sm').css('max-width', '85%');
         }
     });
@@ -80,7 +67,7 @@
         }
     });
 
-
+    
    // Back to top button
    $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
