@@ -102,20 +102,19 @@
                 <li class="form-line" data-type="control_radio" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" > Projet concerné</label>
                     <div id="cid_13" class="form-input-wide" data-layout="full">
                         <div class="form-single-column" role="group" aria-labelledby="label_13" data-component="radio">
-                            <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
-                            <input type="radio" class="form-radio" id="komkom" name="projet" value="0" /><label for="komkom">Projet Yook- Kom Kom </label></span>
-                            <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
-                            <input type="radio" class="form-radio" id="pra" name="projet" value="0" /><label for="pra">Projet de Résilience Agricole (PRA) </label></span>
-                            <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
-                            <input type="radio" class="form-radio" id="pria" name="projet" value="0" /><label for="pria">Projet de réponse à l’insécurité alimentaire</label></span>
-                            <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
-                            <input type="radio" class="form-radio" id="inondation" name="projet" value="0" /><label for="inondation">Inondation</label></span>
-                            <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
-                            <input type="radio" class="form-radio" id="incendie" name="projet" value="0" /><label for="incendie">Incendie</label></span>
+                            @foreach($projets as $projet)
+
+                            <span class="form-radio-item" style="clear:left">
+                                <span class="dragger-item"></span>
+                                <input type="radio" class="form-radio" id="komkom" name="projet" value="{{ $projet->id}}" />
+                                <label for="komkom">{{ $projet->libele}}</label>
+                            </span>
+                            @endforeach
+                            
                         </div>
                     </div>
                 </li>
-                
+
                 {{-- section 2 --}}
                 <li id="cid_8">
                     <div class="form-header-group  header-default">
@@ -145,7 +144,7 @@
                             <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
                             <input type="radio" class="form-radio" id="sexe_m" name="sexe" value="0" /><label for="sexe_m">Masculin</label></span>
                             <span class="form-radio-item" style="clear:left"><span class="dragger-item"></span>
-                            <input type="radio" class="form-radio" id="sexe_f" name="sexe" value="0" /><label for="sexe_m">Féminin</label></span>
+                            <input type="radio" class="form-radio" id="sexe_f" name="sexe" value="1" /><label for="sexe_f">Féminin</label></span>
                         </div>
                     </div>
                 </li>

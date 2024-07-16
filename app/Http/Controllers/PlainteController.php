@@ -3,13 +3,17 @@
 namespace App\Http\Controllers;
 
 use App\Models\Plainte;
+use App\Models\Projet;
 use Illuminate\Http\Request;
+
 
 class PlainteController extends Controller
 {
     public function index()
     {
-        return view('Frontend.pages.plainte');
+        $projets = Projet::all();
+/*         dd($projets); */
+        return view('Frontend.pages.plainte', compact('projets'));
     }
     public function store(Request $request)
     {
