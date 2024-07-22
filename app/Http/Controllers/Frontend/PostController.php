@@ -2,28 +2,26 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Http\Controllers\Controller;
+
 
 /**
  * Class HomeController.
  */
-class HomeController
+class PostController extends Controller
 {
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-        return view('frontend.index');
+        return view('frontend.posts.index');
     }
 
 
-    public function about()
+    public function show(Post $post)
     {
-        return view('frontend.pages.about');
-    }
 
-    public function media()
-    {
-        return view('frontend.pages.media');
+        return view('frontend.posts.show', compact('post'));
     }
 }

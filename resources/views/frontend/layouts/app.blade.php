@@ -35,13 +35,13 @@
         <!-- Core theme CSS (includes Bootstrap)-->
     </head>
     <body>
-        {{--
+
         <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
         <!-- Spinner End -->
-         --}}
+
 
         <!-- Navbar start -->
         <div class="container-fluid fixed-top px-0">
@@ -50,8 +50,8 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-8">
                             <div class="topbar-info d-flex flex-wrap">
-                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>Example@gmail.com</a>
-                                <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+01234567890</a>
+                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>contact@papsa.com</a>
+                                <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+221339000000</a>
                             </div>
                         </div>
                         <div class="col-md-4">
@@ -59,14 +59,16 @@
                                 <a href="#" class="btn-square text-white me-2"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" class="btn-square text-white me-2"><i class="fab fa-twitter"></i></a>
                                 <a href="#" class="btn-square text-white me-2"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn-square text-white me-2"><i class="fab fa-pinterest"></i></a>
-                                <a href="#" class="btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a>
+                                {{-- <a href="#" class="btn-square text-white me-2"><i class="fab fa-pinterest"></i></a> --}}
+                                {{-- <a href="#" class="btn-square text-white me-0"><i class="fab fa-linkedin-in"></i></a> --}}
+                                <a href="#" class="btn-square text-white me-0"><i class="fab fa-youtube"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <nav class="navbar navbar-light bg-light navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand ms-3">
+                    <a href="{{ route('frontend.index') }}" class="navbar-brand ms-3">
                         <img src="{{ asset('images/logo-papsa.png') }}" height="50px" alt="Logo PAPSA">
                     </a>
                     <button class="navbar-toggler py-2 px-3 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -74,25 +76,25 @@
                     </button>
                     <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <a href="index.html" class="nav-item nav-link active">Accueil</a>
-                            <a href="about.html" class="nav-item nav-link">Le PROJET</a>
-                            <a href="service.html" class="nav-item nav-link">Actualités</a>
-                            <a href="causes.html" class="nav-item nav-link">Mediathéque</a>
-                            <a href="events.html" class="nav-item nav-link">Events</a>
+                            <a href="{{ route('frontend.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.index')) }}">Accueil</a>
+                            <a href="{{ route('frontend.about') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.about')) }}">Le PROJET</a>
                             <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programmes</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="blog.html" class="dropdown-item">Blog</a>
-                                    <a href="gallery.html" class="dropdown-item">Gallery</a>
-                                    <a href="volunteer.html" class="dropdown-item">Volunteers</a>
-                                    <a href="donation.html" class="dropdown-item">Donation</a>
-                                    <a href="404.html" class="dropdown-item">404 Error</a>
+                                    <a href="{{ route('frontend.programmes.pnbsf') }}" class="dropdown-item {{ activeClass(Route::is('frontend.programmes.pnbsf')) }}">Programme National de Bourses de Sécurité Familiale</a>
+                                    <a href="{{ route('frontend.programmes.ykk') }}" class="dropdown-item {{ activeClass(Route::is('frontend.programmes.ykk')) }}">Yokk Koom Koom</a>
+                                    <a href="{{ route('frontend.programmes.pra') }}" class="dropdown-item {{ activeClass(Route::is('frontend.programmes.pra')) }}">Programme de résilience agricole</a>
+                                    <a href="{{ route('frontend.programmes.ptm') }}" class="dropdown-item {{ activeClass(Route::is('frontend.programmes.ptm')) }}">Programmes de transferts monétaires</a>
+                                    {{-- <a href="404.html" class="dropdown-item">404 Error</a> --}}
                                 </div>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <a href="{{ route('frontend.posts.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.posts.index')) }}">Actualités</a>
+                            <a href="{{ route('frontend.media') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.media')) }}">Mediathéque</a>
+                            {{-- <a href="events.html" class="nav-item nav-link">Events</a> --}}
+                            {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
-                            <a href="" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">MGP</a>
+                            <a href="{{ route('frontend.plaintes.index') }}" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">MGP</a>
                         </div>
                     </div>
                 </nav>

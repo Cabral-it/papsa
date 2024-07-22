@@ -22,35 +22,33 @@
                         <h1 class="display-1 text-capitalize text-white mb-4">PAPSA</h1>
                         <p class="mb-5 fs-5">Malgré la stabilité politique et la sécurité, les taux de pauvreté et de vulnérabilité au Sénégal demeurent élevés et le pays est impacté régulièrement par des chocs climatiques.</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">Join With Us</a>
+                            <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">A propos</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/carousel-2.jpg" class="img-fluid" alt="Image">
+                <img src="img/senegalaise.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">WE'll Save Our Planet</h4>
-                        <h1 class="display-1 text-capitalize text-white mb-4">Protect Environment</h1>
-                        <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Projet d'Appui à la Protection Sociale Adaptative</h4>
+                        <h1 class="display-1 text-capitalize text-white mb-4">PAPSA</h1>
+                        <p class="mb-5 fs-5">Malgré la stabilité politique et la sécurité, les taux de pauvreté et de vulnérabilité au Sénégal demeurent élevés et le pays est impacté régulièrement par des chocs climatiques.</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">Join With Us</a>
+                            <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">S'inscrire à la NewsLetter</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="img/carousel-3.jpg" class="img-fluid" alt="Image">
+                <img src="img/about-1.jpg" class="img-fluid" alt="Image">
                 <div class="carousel-caption">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">WE'll Save Our Planet</h4>
-                        <h1 class="display-1 text-capitalize text-white mb-4">Protect Environment</h1>
-                        <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        </p>
+                        <h4 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Projet d'Appui à la Protection Sociale Adaptative</h4>
+                        <h1 class="display-1 text-capitalize text-white mb-4">PAPSA</h1>
+                        <p class="mb-5 fs-5">Malgré la stabilité politique et la sécurité, les taux de pauvreté et de vulnérabilité au Sénégal demeurent élevés et le pays est impacté régulièrement par des chocs climatiques.</p>
                         <div class="d-flex align-items-center justify-content-center">
-                            <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">Join With Us</a>
+                            <a class="btn-hover-bg btn btn-primary text-white py-3 px-5" href="#">MGP</a>
                         </div>
                     </div>
                 </div>
@@ -79,13 +77,13 @@
             </div>
             <div class="col-xl-7">
                 <h5 class="text-uppercase text-primary">A propos du Projet</h5>
-                <h1 class="mb-4">A travers des programmes de protection sociale</h1>
-                <p class="fs-5 mb-4">Le PAPSA vise à renforcer les principaux outils du système de protection sociale sénégalais, à soutenir les programmes d'inclusion économique pour les pauvres chroniques, à financer des programmes de réponses aux chocs pour les ménages vulnérables, en particulier pour les chocs climatiques, et à fournir un appui institutionnel et un renforcement des capacités pour le secteur de la protection sociale.</p>
+                <h1 class="mb-4">Avec l'appui de la Banque Mondiale</h1>
+                <p class="fs-5 mb-4">Le PAPSA vise à renforcer les principaux outils du système de protection sociale sénégalais.</p>
                 <div class="tab-class bg-secondary p-4">
                     <ul class="nav d-flex mb-2">
                         <li class="nav-item mb-3">
                             <a class="d-flex py-2 text-center bg-white active" data-bs-toggle="pill" href="#tab-1">
-                                <span class="text-dark" style="width: 150px;">About</span>
+                                <span class="text-dark" style="width: 150px;">Objectif</span>
                             </a>
                         </li>
                         <li class="nav-item mb-3">
@@ -105,12 +103,11 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="text-start my-auto">
-                                            <h5 class="text-uppercase mb-3">Lorem Ipsum 1</h5>
-                                            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                                            </p>
-                                            <div class="d-flex align-items-center justify-content-start">
+                                            {{-- <h5 class="text-uppercase mb-3">Lorem Ipsum 1</h5> --}}
+                                            <p class="mb-4">Le Projet de filets sociaux adaptatifs (P176544) a pour objectif de développement (PDO) d'aider le gouvernement à renforcer son système de protection sociale adaptatif en améliorant les caractéristiques clés du système et en renforçant la capacité institutionnelle, en aidant à étendre la portée des programmes en permettant aux ménages pauvres et vulnérables d'accéder à une aide adaptée aux chocs, en consolidant les nouveaux aspects de la protection sociale tels que le soutien productif, et en améliorant l'efficacité globale par l'innovation et l'apprentissage opérationnel</p>
+                                            {{-- <div class="d-flex align-items-center justify-content-start">
                                                 <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -121,12 +118,17 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="text-start my-auto">
-                                            <h5 class="text-uppercase mb-3">Lorem Ipsum 2</h5>
-                                            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                                            {{-- <h5 class="text-uppercase mb-3">Lorem Ipsum 2</h5> --}}
+                                            <p class="mb-4">Le projet sera mis en œuvre sur une période de cinq (5) ans et s’articule autour de cinq (03) composantes complémentaires conçues dans l’optique de renforcer le système de protection social en s’appuyant sur les avancées déjà notées avec le Projet d’Appui aux Filets Sociaux (P144597) en termes de protection sociale :
+                                                <ul>
+                                                    <li>Composante 1 : Renforcement des fonctions transversales du système de protection sociale</li>
+                                                    <li>Composante 2 : Equité sociale et résilience productive</li>
+                                                    <li>Composante 3 : Solidarité nationale à travers une assistance en réponse aux chocs</li>
+                                                </ul>
                                             </p>
-                                            <div class="d-flex align-items-center justify-content-start">
+                                            {{-- <div class="d-flex align-items-center justify-content-start">
                                                 <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -137,12 +139,11 @@
                                 <div class="col-12">
                                     <div class="d-flex">
                                         <div class="text-start my-auto">
-                                            <h5 class="text-uppercase mb-3">Lorem Ipsum 3</h5>
-                                            <p class="mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                                            </p>
-                                            <div class="d-flex align-items-center justify-content-start">
+                                            {{-- <h5 class="text-uppercase mb-3">Lorem Ipsum 3</h5> --}}
+                                            <p class="mb-4">Ce projet, dont l’objectif de développement est de renforcer le système de protection social est en lien avec la vision de la politique sociale du gouvernement axée sur la réduction des inégalités sociales et l'éradication de la pauvreté. Cette ambition est inscrite dans l'axe 2 du Plan Sénégal Emergent (PSE) qui met l'accent sur le capital humain, la protection sociale et le développement durable, faisant ainsi de la protection sociale un secteur prioritaire. Au niveau national, le projet permettra une amélioration de la résilience socio-économique des ménages pauvres et vulnérables face aux chocs climatiques.</p>
+                                            {{-- <div class="d-flex align-items-center justify-content-start">
                                                 <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                                            </div>
+                                            </div> --}}
                                         </div>
                                     </div>
                                 </div>

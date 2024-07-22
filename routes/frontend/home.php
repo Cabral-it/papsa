@@ -3,11 +3,12 @@
 use Tabuna\Breadcrumbs\Trail;
 use App\Http\Controllers\PlainteController;
 use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\PostController;
 use App\Http\Controllers\Frontend\TermsController;
 
 /*
  * Frontend Controllers
- * All route names are prefixed with 'frontend.'.
+ * All route names are prefixed with 'frontend.'
  */
 Route::get('/', [HomeController::class, 'index'])
     ->name('index')
@@ -23,6 +24,24 @@ Route::get('terms', [TermsController::class, 'index'])
     });
 
 
+// MGP
+Route::get('/plainte', [PlainteController::class, 'index'])->name('plaintes.index');
 Route::post('/plainte', [PlainteController::class, 'store'])->name('plaintes.store');
 
-Route::get('/plainte', [PlainteController::class, 'index'])->name('plaintes.index');
+// A propos
+Route::get('/about', [HomeController::class, 'about'])->name('about');
+
+// Bibliotheque
+Route::get('/media', [HomeController::class, 'media'])->name('media');
+
+// Les programmes
+Route::prefix('programes/')->name('programmes.')->group(function () {
+    Route::get('pnbsf', [HomeController::class, 'pnbsf'])->name('pnbsf');
+    Route::get('ykk', [HomeController::class, 'ykk'])->name('ykk');
+    Route::get('pra', [HomeController::class, 'pra'])->name('pra');
+    Route::get('ptm', [HomeController::class, 'ptm'])->name('ptm');
+});
+
+// Actualités
+Route::get('posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('posts/{post}', [PostController::class, 'show'])->name('posts.show');
