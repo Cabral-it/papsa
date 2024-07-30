@@ -17,10 +17,10 @@ class CreatePlaintesTable extends Migration
             $table->id();
             $table->boolean('type'); // Travailleur 1 ou Beneficiaire 0
             // Section 1 Localisation reclamation
-            $table->string('localite');
-            $table->string('commune');
-            $table->unsignedBigInteger('departement_id');
             $table->unsignedBigInteger('region_id');
+            $table->unsignedBigInteger('departement_id');
+            $table->string('commune');
+            $table->string('localite');
 
             // Section 2 Identification du plaignant
             $table->string('prenom');

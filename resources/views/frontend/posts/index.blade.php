@@ -23,7 +23,7 @@
     <div class="container py-5">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
             <h5 class="text-uppercase text-primary">Dernières infos</h5>
-            {{-- <h1 class="mb-0">Help today because tomorrow you may be the one who needs more helping!</h1> --}}
+            <h1 class="mb-0">Aidez aujourd’hui, car demain vous serez peut-être celui qui aura besoin de plus d’aide !</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-6 col-xl-3">
