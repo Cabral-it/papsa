@@ -11,7 +11,6 @@
         <p class="fs-5 text-white mb-4"> Renforcer le système de protection social est en lien avec la vision de la politique sociale du gouvernement axée sur la réduction des inégalités sociales et l'éradication de la pauvreté.</p>
         <ol class="breadcrumb justify-content-center mb-0">
             <li class="breadcrumb-item"><a href="{{ route('frontend.index') }}">Accueil</a></li>
-            {{-- <li class="breadcrumb-item"><a href="#">Pages</a></li> --}}
             <li class="breadcrumb-item active text-white">A propos</li>
         </ol>
     </div>
@@ -65,10 +64,9 @@
             <div class="col-lg-7">
                 <h5 class="text-uppercase text-primary">Become a Volunteer?</h5>
                 <h1 class="mb-4">Join your hand with us for a better life and beautiful future.</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.
-                </p>
+                <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
                 <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> We are friendly to each other.</p>
-                <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> If you join with us,We will give you free training.</p>
+                <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> If you join with us, We will give you free training.</p>
                 <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> Its an opportunity to help poor Environments.</p>
                 <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> No goal requirements.</p>
                 <p class="text-dark mb-5"><i class=" fa fa-check text-primary me-2"></i> Joining is tottaly free. We dont need any money from you.</p>

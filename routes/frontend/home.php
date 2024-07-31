@@ -25,8 +25,9 @@ Route::get('terms', [TermsController::class, 'index'])
 
 
 // MGP
-Route::get('/plainte', [PlainteController::class, 'index'])->name('plaintes.index');
+Route::get('/plainte/{type}', [PlainteController::class, 'index'])->name('plaintes.index');
 Route::post('/plainte', [PlainteController::class, 'store'])->name('plaintes.store');
+Route::get('/plainte/dept/{id}', [PlainteController::class, 'getDepartement'])->name('plaintes.dep');
 
 // A propos
 Route::get('/about', [HomeController::class, 'about'])->name('about');

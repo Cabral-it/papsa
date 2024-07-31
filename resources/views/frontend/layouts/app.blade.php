@@ -94,7 +94,7 @@
                             {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
-                            <a href="{{ route('frontend.plaintes.index') }}" class="btn-hover-bg btn btn-primary text-white py-2 px-4 me-3">MGP</a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mgp_modal">MGP</button>-
                         </div>
                     </div>
                 </nav>
@@ -107,10 +107,7 @@
         </div>
         <!-- Navbar End -->
 
-
-
         @yield('content')
-
 
         <!-- Footer Start -->
         <div class="container-fluid footer bg-dark text-body py-5">
@@ -237,6 +234,25 @@
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+        {{-- MODAL MGP --}}
+        <div class="modal fade" id="mgp_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Mécanisme de Gestion des Plaintes</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Etes-vous un bénéficiaire d'un projet ou un employé ?</h6>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a href="{{ route('frontend.plaintes.index', 0) }}" class="btn btn-primary">Je suis bénéficiaire</a>
+                        <a href="{{ route('frontend.plaintes.index', 1) }}" class="btn btn-primary">Je suis employé(e)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         @stack('before-scripts')
 

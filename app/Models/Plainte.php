@@ -13,15 +13,10 @@ class Plainte extends Model
     use HasFactory;
 
     public $fillable = [
-        'localite',
-        'commune',
-        'departement',
-        'region',
-
-        'prenom',
-        'name',
-        'fonction',
-        'solution',
+        'type', 'region_id', 'departement_id', 'commune', 'localite', 'projet_id', 'prenom', 'nom',
+        'sexe', 'fonction', 'adresse', 'telephone', 'entreprise', 'entreprise_name',
+        'reclamation_type', 'reclamation_description', 'preuve', 'pj',
+        'incident_date', 'solutions'
     ];
 
     public function projet() {
