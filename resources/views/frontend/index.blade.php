@@ -609,7 +609,7 @@
 <!-- Blog End -->
 
 <!-- Gallery Start -->
-<div class="container-fluid gallery py-5 px-0">
+<!-- <div class="container-fluid gallery py-5 px-0">
     <div class="text-center mx-auto pb-5" style="max-width: 800px;">
         <h5 class="text-uppercase text-primary">Our work</h5>
         <h1 class="mb-4">We consider environment welfare</h1>
@@ -683,7 +683,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Gallery End -->
 
 <!-- Volunteers Start -->
@@ -731,8 +731,8 @@
                 </div>
             </div>
             <div class="col-lg-7">
-                <h5 class="text-uppercase text-primary">Become a Volunteer?</h5>
-                <h1 class="mb-4">Join your hand with us for a better life and beautiful future.</h1>
+                <h5 class="text-uppercase text-primary">Le Projet</h5>
+                <h2 class="mb-4">Join your hand with us for a better life and beautiful future.</h>
                 <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.
                 </p>
                 <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> We are friendly to each other.</p>
