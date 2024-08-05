@@ -24,11 +24,11 @@
     </x-utils.alert>
 @endif
 
-@if(session()->get('flash_danger'))
+{{-- @if(session()->get('flash_danger'))
     <x-utils.alert type="danger" class="header-message">
         {{ session()->get('flash_danger') }}
     </x-utils.alert>
-@endif
+@endif --}}
 
 @if(session()->get('status'))
     <x-utils.alert type="success" class="header-message">

@@ -50,7 +50,7 @@
                     <div class="row align-items-center justify-content-center">
                         <div class="col-md-8">
                             <div class="topbar-info d-flex flex-wrap">
-                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>contact@papsa.com</a>
+                                <a href="#" class="text-light me-4"><i class="fas fa-envelope text-white me-2"></i>contact@papsa.sn</a>
                                 <a href="#" class="text-light"><i class="fas fa-phone-alt text-white me-2"></i>+221339000000</a>
                             </div>
                         </div>
@@ -93,7 +93,7 @@
                             {{-- <a href="events.html" class="nav-item nav-link">Events</a> --}}
                             {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                         </div>
-                        <div class="d-flex align-items-center flex-nowrap pt-xl-0" style="margin-left: 15px;">
+                        <div class="d-flex align-items-center flex-nowrap pt-xl-0 mx-2">
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mgp_modal">MGP</button>-
                         </div>
                     </div>
@@ -113,39 +113,47 @@
         <div class="container-fluid footer bg-dark text-body py-5">
             <div class="container py-5">
                 <div class="row g-5">
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item">
-                            <h4 class="mb-4 text-white">Newsletter</h4>
-                            <p class="mb-4">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.</p>
+                            <h4 class="mb-4 text-white">PAPSA</h4>
+                            <p class="mb-4">
+                                Projet d'Appui à la Protection Social Adaptative  <br>
+                                Cité Keur Gorgui, Mermoz Dakar <br>
+                                (+221) 33 879 29 60 <br>
+                                contact@papsa.sn
+                            </p>
+                            <p>Restez informez de tous activités du projet</p>
                             <div class="position-relative mx-auto">
-                                <input class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
-                                <button type="button" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                <input class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Entrez votre email">
+                                <button type="button" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">S'inscrire</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Our Services</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Ocean Turtle</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> White Tiger</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Social Ecology</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Loneliness</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Beauty of Life</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Present for You</a>
+                            <h4 class="mb-4 text-white">Liens utils</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> Ministère de la Famille et des Solidarité</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Banque Mondiale</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Ministère de l'Agriculture et de l'Elevage</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> DGPSN</a>
+                            {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Beauty of Life</a> --}}
+                            {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Present for You</a> --}}
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="col-md-6 col-lg-6 col-xl-4">
                         <div class="footer-item d-flex flex-column">
-                            <h4 class="mb-4 text-white">Volunteer</h4>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Karen Dawson</a>
+                            <h4 class="mb-4 text-white">Nos horaires</h4>
+                            <p><br>
+                            Lundi-Vendredi : <strong>9h00 à 17h00</strong></p>
+                            {{-- <a href=""><i class="fas fa-angle-right me-2"></i> Karen Dawson</a>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Jack Simmons</a>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Michael Linden</a>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Simon Green</a>
                             <a href=""><i class="fas fa-angle-right me-2"></i> Natalie Channing</a>
-                            <a href=""><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a>
+                            <a href=""><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a> --}}
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    {{-- <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item">
                             <h4 class="mb-4 text-white">Our Gallery</h4>
                             <div class="row g-2">
@@ -199,7 +207,7 @@
 								</div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -210,7 +218,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>papsa.sn</a>, Tous droits reservés.</span>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="d-flex align-items-center justify-content-center">
@@ -225,7 +233,7 @@
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        Par <a class="border-bottom" href="https://devcommunautaire.gouv.sn">Cellule Informatique/MFS</a>
                     </div>
                 </div>
             </div>
@@ -264,7 +272,7 @@
         <script src="{{ asset('lib/counterup/counterup.min.js') }}"></script>
         <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
         <script src="{{ asset('lib/lightbox/js/lightbox.min.js') }}"></script>
-        <!-- Template Javascript -->+
+        <!-- Template Javascript -->
         <script src="{{ asset('lib/main.js') }}"></script>
         {{-- <script src="{{ asset('js/frontend.js') }}"></script> --}}
 

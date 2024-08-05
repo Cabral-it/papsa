@@ -37,7 +37,7 @@ class PlainteController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all(), $request->type);
+        // dd($request->all(), $request->type);
         // Validation formulaire
         $this->validate($request, [
             // '_type' => 'required|boolean',
@@ -58,14 +58,14 @@ class PlainteController extends Controller
             'reclamation_description' => 'required|string',
             'preuve' => 'required|boolean',
             'pj' => 'file',
-            'incident_date' => 'required|date',
-            'solutions' => 'required|string',
+            'incident_date' => 'date',
+            'solutions' => 'string',
         ]);
 
-        if ($request->type == true) {
+        if ($request->type == 1) {
             $this->validate($request, [
                 'entreprise' => 'required|boolean',
-                'entreprise_name' => 'string',
+                // 'entreprise_name' => 'string',
             ]);
         }else{
             $this->validate($request, [
@@ -112,6 +112,6 @@ class PlainteController extends Controller
         Plainte::create($plainte);
 
         // Return index with message success
-        return redirect()->route('frontend.index')->with(['flash_sucess' => 'Plainte enregistrer avec success']);
+        return redirect()->route('frontend.index')->with(['flash_success' => 'Plainte enregistrer avec success']);
     }
 }
