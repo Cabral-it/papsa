@@ -158,7 +158,7 @@
 <!-- About End -->
 
 <!-- Services Start -->
-<div class="container-fluid service py-5 bg-light">
+{{-- <div class="container-fluid service py-5 bg-light">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
             <h5 class="text-uppercase text-primary">What we do</h5>
@@ -212,27 +212,27 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Services End -->
 
-<!-- Donation Start -->
+<!-- Actualites Start -->
 <div class="container-fluid donation py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">Donation</h5>
-            <h1 class="mb-0">Your money will save our life</h1>
+            <h5 class="text-uppercase text-primary">Actualités</h5>
+            <h1 class="mb-0">Dernières nouvelles</h1>
         </div>
         <div class="row g-4">
             <div class="col-lg-4">
                 <div class="donation-item">
                     <img src="img/donation-1.jpg" class="img-fluid w-100" alt="Image">
                     <div class="donation-content d-flex flex-column">
-                        <h5 class="text-uppercase text-primary mb-4">Organic</h5>
-                        <a href="#" class="btn-hover-color display-6 text-white">Help Us More</a>
-                        <h4 class="text-white mb-4">Protect Environments</h4>
-                        <p class="text-white mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                        <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
+
+                        {{-- <h4 class="text-white mb-4">Protect Environments</h4> --}}
+                        {{-- <p class="text-white mb-4">Monsieur Ndiogou Diouf, Secrétaire Général du Ministère de la Famille et des Solidarités, a présidé, ce mercredi 29 mai 2024, au nom de Madame le Ministre Maimouna Dieye, la cérémonie d’ouverture de l’atelier de partage des retours d’expérience du Registre National Unifié (RNU).</p> --}}
                         <div class="donation-btn d-flex align-items-center justify-content-start">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Donate !</a>
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
                         </div>
                     </div>
                 </div>
@@ -241,12 +241,12 @@
                 <div class="donation-item">
                     <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
                     <div class="donation-content d-flex flex-column">
-                        <h5 class="text-uppercase text-primary mb-4">Ecosystem</h5>
-                        <a href="#" class="btn-hover-color display-6 text-white">Help Us More</a>
-                        <h4 class="text-white mb-4">Protect Environments</h4>
-                        <p class="text-white mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                        <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
+
+                        {{-- <h4 class="text-white mb-4">Protect Environments</h4> --}}
+                        {{-- <p class="text-white mb-4">Monsieur Ndiogou Diouf, Secrétaire Général du Ministère de la Famille et des Solidarités, a présidé, ce mercredi 29 mai 2024, au nom de Madame le Ministre Maimouna Dieye, la cérémonie d’ouverture de l’atelier de partage des retours d’expérience du Registre National Unifié (RNU).</p> --}}
                         <div class="donation-btn d-flex align-items-center justify-content-start">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Donate !</a>
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
                         </div>
                     </div>
                 </div>
@@ -255,66 +255,66 @@
                 <div class="donation-item">
                     <img src="img/donation-3.jpg" class="img-fluid w-100" alt="Image">
                     <div class="donation-content d-flex flex-column">
-                        <h5 class="text-uppercase text-primary mb-4">Recycling</h5>
-                        <a href="#" class="btn-hover-color display-6 text-white">Help Us More</a>
-                        <h4 class="text-white mb-4">Protect Environments</h4>
-                        <p class="text-white mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+                        <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
+
+                        {{-- <h4 class="text-white mb-4">Protect Environments</h4> --}}
+                        {{-- <p class="text-white mb-4">Monsieur Ndiogou Diouf, Secrétaire Général du Ministère de la Famille et des Solidarités, a présidé, ce mercredi 29 mai 2024, au nom de Madame le Ministre Maimouna Dieye, la cérémonie d’ouverture de l’atelier de partage des retours d’expérience du Registre National Unifié (RNU).</p> --}}
                         <div class="donation-btn d-flex align-items-center justify-content-start">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Donate !</a>
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-12">
                 <div class="d-flex align-items-center justify-content-center">
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">All Donation</a>
+                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.index') }}">Plus d'actualités</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Donation End -->
+<!-- Actualites End -->
 
 <!-- Counter Start -->
 <div class="container-fluid counter py-5" style="background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(img/volunteers-bg.jpg) center center; background-size: cover;">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">Achievements</h5>
-            <p class="text-white mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+            <h5 class="text-uppercase text-white">QUELQUES CHIFFRES</h5>
+            {{-- <p class="text-white mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley --}}
             </p>
         </div>
         <div class="row g-4">
-            <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="counter-item text-center border p-5">
                     <i class="fas fa-thumbs-up fa-4x text-white"></i>
-                    <h3 class="text-white my-4">Beavers Saved</h3>
+                    <h3 class="text-white my-4">Registre National Unique (personnes)</h3>
                     <div class="counter-counting">
-                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">3600</span>
-                        <span class="h1 fw-bold text-primary">+</span>
+                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">1000000</span>
+                        {{-- <span class="h1 fw-bold text-primary">Personnes</span> --}}
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="counter-item text-center border p-5">
                     <i class="fas fa-file-invoice-dollar fa-4x text-white"></i>
-                    <h3 class="text-white my-4">Funds Collected</h3>
+                    <h3 class="text-white my-4">Yook-Kom Kom (ménages)</h3>
                     <div class="counter-counting text-center border-white w-100" style="border-style: dotted; font-size: 30px;">
-                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">513</span>
-                        <span class="h1 fw-bold text-primary">$</span>
+                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">15000</span>
+                        {{-- <span class="h1 fw-bold text-primary">Ménages</span> --}}
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
+            <div class="col-md-6 col-lg-6 col-xl-4">
                 <div class="counter-item text-center border p-5">
                     <i class="fas fa-user fa-4x text-white"></i>
-                    <h3 class="text-white my-4">Volunteer</h3>
+                    <h3 class="text-white my-4">Programme de résilience agricole (ménages)</h3>
                     <div class="counter-counting text-center border-white w-100" style="border-style: dotted; font-size: 30px;">
-                        <span class="text-primary fs-2 fw-bold" data-toggle="counter-up">713</span>
-                        <span class="h1 fw-bold text-primary">+</span>
+                        <span class="text-white fs-2 fw-bold" data-toggle="counter-up">10000</span>
+                        {{-- <span class="h1 fw-bold text-primary">+</span> --}}
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
+            {{-- <div class="col-md-6 col-lg-6 col-xl-3">
                 <div class="counter-item text-center border p-5">
                     <i class="fas fa-heart fa-4x text-white"></i>
                     <h3 class="text-white my-4">Days of Help</h3>
@@ -323,10 +323,10 @@
                         <span class="h1 fw-bold text-primary">+</span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-12">
                 <div class="d-flex align-items-center justify-content-center">
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Join With Us</a>
+                    {{-- <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Join With Us</a> --}}
                 </div>
             </div>
         </div>
@@ -335,7 +335,7 @@
 <!-- Counter End -->
 
 <!-- Causes Start -->
-<div class="container-fluid causes py-5">
+{{-- <div class="container-fluid causes py-5">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
             <h5 class="text-uppercase text-primary">Recent Causes</h5>
@@ -442,72 +442,35 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Causes End -->
 
-<!-- Events Start -->
+<!-- Partenaires Start -->
 <div class="container-fluid event py-5">
-    <div class="container py-5">
+    <div class="container">
         <div class="text-center mx-auto mb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">Upcoming Events</h5>
-            <h1 class="mb-0">Help today because tomorrow you may be the one who needs more helping!</h1>
+            <h5 class="text-uppercase text-primary">Nos partenaires</h5>
         </div>
         <div class="event-carousel owl-carousel">
             <div class="event-item">
                 <img src="img/events-1.jpg" class="img-fluid w-100" alt="Image">
-                <div class="event-content p-4">
-                    <div class="d-flex justify-content-between mb-4">
-                        <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>Grand Mahal, Dubai 2100.</span>
-                        <span class="text-body"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                    </div>
-                    <h4 class="mb-4">How To Build A Cleaning Plan</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                </div>
             </div>
             <div class="event-item">
                 <img src="img/events-2.jpg" class="img-fluid w-100" alt="Image">
-                <div class="event-content p-4">
-                    <div class="d-flex justify-content-between mb-4">
-                        <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>Grand Mahal, Dubai 2100.</span>
-                        <span class="text-body"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                    </div>
-                    <h4 class="mb-4">How To Build A Cleaning Plan</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                </div>
             </div>
             <div class="event-item">
                 <img src="img/events-3.jpg" class="img-fluid w-100" alt="Image">
-                <div class="event-content p-4">
-                    <div class="d-flex justify-content-between mb-4">
-                        <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>Grand Mahal, Dubai 2100.</span>
-                        <span class="text-body"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                    </div>
-                    <h4 class="mb-4">How To Build A Cleaning Plan</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                </div>
             </div>
             <div class="event-item">
                 <img src="img/events-4.jpg" class="img-fluid w-100" alt="Image">
-                <div class="event-content p-4">
-                    <div class="d-flex justify-content-between mb-4">
-                        <span class="text-body"><i class="fas fa-map-marker-alt me-2"></i>Grand Mahal, Dubai 2100.</span>
-                        <span class="text-body"><i class="fas fa-calendar-alt me-2"></i>10 Feb, 2023</span>
-                    </div>
-                    <h4 class="mb-4">How To Build A Cleaning Plan</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Events End -->
+<!-- Partenaires End -->
 
 <!-- Blog Start -->
-<div class="container-fluid blog py-5 mb-5">
+{{-- <div class="container-fluid blog py-5 mb-5">
     <div class="container py-5">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
             <h5 class="text-uppercase text-primary">Latest News</h5>
@@ -605,15 +568,15 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Blog End -->
 
 <!-- Gallery Start -->
 <div class="container-fluid gallery py-5 px-0">
     <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-        <h5 class="text-uppercase text-primary">Our work</h5>
-        <h1 class="mb-4">We consider environment welfare</h1>
-        <p class="mb-0">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
+        <h5 class="text-uppercase text-primary">Médiathéque</h5>
+        <h1 class="mb-4">Quelques réalisations</h1>
+        {{-- <p class="mb-0">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p> --}}
     </div>
     <div class="row g-0">
         <div class="col-lg-4">
@@ -687,7 +650,7 @@
 <!-- Gallery End -->
 
 <!-- Volunteers Start -->
-<div class="container-fluid volunteer py-5 mt-5">
+{{-- <div class="container-fluid volunteer py-5 mt-5">
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-5">
@@ -744,6 +707,6 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <!-- Volunteers End -->
 @endsection

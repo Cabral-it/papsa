@@ -23,7 +23,7 @@
         <form action="{{ route('frontend.plaintes.store') }}" class="form" max-width="800px"  method="post" enctype="multipart/form-data" >
             @csrf
             @method('POST')
-            <input type="radio" name="type" class="d-none" value="{{ $type === 1 ? '1' : '0' }}">
+            <input type="hidden" name="type" class="d-none" value="{{ $type == 1 ? '1' : '0' }}">
 
             <div class="text-center text-primary mb-4">
                 <h3>Section 1: Localisation de la réclamation</h3>
