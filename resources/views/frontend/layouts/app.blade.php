@@ -77,7 +77,7 @@
                     <div class="collapse navbar-collapse bg-light" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
                             <a href="{{ route('frontend.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.index')) }}">Accueil</a>
-                            <a href="{{ route('frontend.about') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.about')) }}">Le PROJET</a>
+                            <a href="{{ route('frontend.about') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.about')) }}">Le projet</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Programmes</a>
                                 <div class="dropdown-menu m-0 bg-secondary rounded-0">
@@ -94,7 +94,7 @@
                             {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                         </div>
                         <div class="d-flex align-items-center flex-nowrap pt-xl-0 mx-2">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mgp_modal">MGP</button>-
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mgp_modal">Déposez votre Plainte</button>-
                         </div>
                     </div>
                 </nav>
