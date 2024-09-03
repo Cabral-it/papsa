@@ -57,7 +57,7 @@ class PlainteController extends Controller
             'reclamation_type' => 'required|integer',
             'reclamation_description' => 'required|string',
             'preuve' => 'required|boolean',
-            'pj' => 'file',
+            'pj' => 'file|mime:pdf,png',
             'incident_date' => 'date',
             'solutions' => 'string',
         ]);
@@ -65,7 +65,7 @@ class PlainteController extends Controller
         if ($request->type == 1) {
             $this->validate($request, [
                 'entreprise' => 'required|boolean',
-                // 'entreprise_name' => 'string',
+                'entreprise_name' => 'string',
             ]);
         }else{
             $this->validate($request, [
