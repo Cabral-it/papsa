@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Frontend;
 
+use App\Domains\Article\Services\ArticleService;
+
 
 /**
  * Class HomeController.
@@ -11,9 +13,11 @@ class HomeController
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function index()
+    public function index(ArticleService $articleService)
     {
-        return view('frontend.index');
+        $articles = $articleService->published()
+                    ->limit(3)->get();
+        return view('frontend.index', compact('articles'));
     }
 
 

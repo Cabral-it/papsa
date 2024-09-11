@@ -215,7 +215,47 @@
 </div> --}}
 <!-- Services End -->
 
+<!-- Blog Start -->
+<div class="container-fluid blog py-5 mb-5">
+    <div class="container py-5">
+        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+            <h5 class="text-uppercase text-primary">Derniers Nouvelles</h5>
+        </div>
+        <div class="row g-4">
+            @foreach ($articles as $article)
+            <div class="col-lg-6 col-xl-4">
+                <div class="blog-item">
+                    <div class="blog-img">
+                        <img src="{{ asset('storage/'. $article->image) }}" class="img-fluid w-100" alt="Image">
+                        <div class="blog-info">
+                            <span><i class="fa fa-clock"></i><small> {{ $article->created_at }}</small></span>
+                        </div>
+                        <div class="search-icon">
+                            <a href="{{ asset('storage/'. $article->image) }}" data-lightbox="Blog-1" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-dark border p-4 ">
+                        <h5 class="mb-4">{{ $article->title }}</h5>
+                        <div class="text-center">
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.show', $article) }}">Lire Plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            @endforeach
+
+            <div class="col-12">
+                <div class="d-flex align-items-center justify-content-center">
+                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.index') }}">Plus d'actualités</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Blog End -->
+
 <!-- Actualites Start -->
+{{--
 <div class="container-fluid donation py-5">
     <div class="container">
         <div class="text-center mx-auto pb-5" style="max-width: 800px;">
@@ -223,28 +263,26 @@
             <h1 class="mb-0">Dernières nouvelles</h1>
         </div>
         <div class="row g-4">
-            <div class="col-lg-4">
-                <div class="donation-item">
-                    <img src="img/donation-1.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="donation-content d-flex flex-column">
-                        <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
-
-                        {{-- <h4 class="text-white mb-4">Protect Environments</h4> --}}
-                        {{-- <p class="text-white mb-4">Monsieur Ndiogou Diouf, Secrétaire Général du Ministère de la Famille et des Solidarités, a présidé, ce mercredi 29 mai 2024, au nom de Madame le Ministre Maimouna Dieye, la cérémonie d’ouverture de l’atelier de partage des retours d’expérience du Registre National Unifié (RNU).</p> --}}
-                        <div class="donation-btn d-flex align-items-center justify-content-start">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
+            @foreach ($articles as $article)
+                <div class="col-lg-4">
+                    <div class="donation-item">
+                        <img src="{{ asset('storage/' . $article->image) }}" class="img-fluid w-100" alt="Image">
+                        <div class="donation-content d-flex flex-column">
+                            <h5 class="text-uppercase text-primary mb-4"><a href="{{ route('frontend.posts.show', $article) }}" class="btn-hover-color text-white">{{ $article->title }}</a></h5>
+                            <div class="donation-btn d-flex align-items-center justify-content-start">
+                                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.show', $article) }}">Voir plus</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            @endforeach
             <div class="col-lg-4">
                 <div class="donation-item">
                     <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
                     <div class="donation-content d-flex flex-column">
                         <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
 
-                        {{-- <h4 class="text-white mb-4">Protect Environments</h4> --}}
-                        {{-- <p class="text-white mb-4">Monsieur Ndiogou Diouf, Secrétaire Général du Ministère de la Famille et des Solidarités, a présidé, ce mercredi 29 mai 2024, au nom de Madame le Ministre Maimouna Dieye, la cérémonie d’ouverture de l’atelier de partage des retours d’expérience du Registre National Unifié (RNU).</p> --}}
+
                         <div class="donation-btn d-flex align-items-center justify-content-start">
                             <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
                         </div>
@@ -257,8 +295,6 @@
                     <div class="donation-content d-flex flex-column">
                         <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
 
-                        {{-- <h4 class="text-white mb-4">Protect Environments</h4> --}}
-                        {{-- <p class="text-white mb-4">Monsieur Ndiogou Diouf, Secrétaire Général du Ministère de la Famille et des Solidarités, a présidé, ce mercredi 29 mai 2024, au nom de Madame le Ministre Maimouna Dieye, la cérémonie d’ouverture de l’atelier de partage des retours d’expérience du Registre National Unifié (RNU).</p> --}}
                         <div class="donation-btn d-flex align-items-center justify-content-start">
                             <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
                         </div>
@@ -273,6 +309,7 @@
         </div>
     </div>
 </div>
+--}}
 <!-- Actualites End -->
 
 <!-- Counter Start -->
@@ -469,107 +506,7 @@
 </div>
 <!-- Partenaires End -->
 
-<!-- Blog Start -->
-{{-- <div class="container-fluid blog py-5 mb-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">Latest News</h5>
-            <h1 class="mb-0">Help today because tomorrow you may be the one who needs more helping!
-            </h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> Dec 01.2024</span>
-                            <div class="d-flex">
-                                <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                            </div>
-                        </div>
-                        <div class="search-icon">
-                            <a href="img/blog-1.jpg" data-lightbox="Blog-1" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <h4 class="mb-4">Save The Topic Forests</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> Dec 01.2024</span>
-                            <div class="d-flex">
-                                <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                            </div>
-                        </div>
-                        <div class="search-icon">
-                            <a href="img/blog-2.jpg" data-lightbox="Blog-2" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <h4 class="mb-4">Save The Topic Forests</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> Dec 01.2024</span>
-                            <div class="d-flex">
-                                <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                            </div>
-                        </div>
-                        <div class="search-icon">
-                            <a href="img/blog-3.jpg" data-lightbox="Blog-3" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <h4 class="mb-4">Save The Topic Forests</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-4.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> Dec 01.2024</span>
-                            <div class="d-flex">
-                                <span class="me-3"> 3 <i class="fa fa-heart"></i></span>
-                                <a href="#" class="text-white">0 <i class="fa fa-comment"></i></a>
-                            </div>
-                        </div>
-                        <div class="search-icon">
-                            <a href="img/blog-4.jpg" data-lightbox="Blog-4" class="my-auto"><i class="fas fa-search-plus btn-primary text-white p-3"></i></a>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <h4 class="mb-4">Save The Topic Forests</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<!-- Blog End -->
+
 
 <!-- Gallery Start -->
 <div class="container-fluid gallery py-5 px-0">
