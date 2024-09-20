@@ -20,7 +20,7 @@
                     <th scope="col">Titre</th>
                     <th scope="col">ajouté le</th>
                     <th scope="col">publier</th>
-                    <th scope="col">Action</th>
+                    <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
