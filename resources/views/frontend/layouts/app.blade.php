@@ -218,7 +218,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>papsa.sn</a>, Tous droits reservés.</span>
+                        <span class="text-body"><a href="{{ route('admin.dashboard') }}" target="_blank"><i class="fas fa-copyright text-light me-2"></i>papsa.sn</a>, Tous droits reservés.</span>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="d-flex align-items-center justify-content-center">
