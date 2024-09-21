@@ -69,7 +69,7 @@ class ArticleController extends Controller
 
         if ($request->file('image')) {
             $path = $request->file('image')->store('articles', 'public');
-            $data = ['image' => $path];
+            $data['image'] =  $path;
             Storage::disk('public')->delete($article->image);
         }
         $articleService->update($data, $article);
