@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Domains\Slide\Model\Slide;
 use App\Domains\Article\Services\ArticleService;
 
 /**
@@ -18,7 +19,8 @@ class DashboardController
             'total' => $articleService->all()->count(),
             'published' => $articleService->published()->count(),
         ];
+        $slides = Slide::all();
 
-        return view('backend.dashboard', compact('articleStat'));
+        return view('backend.dashboard', compact('articleStat', 'slides'));
     }
 }

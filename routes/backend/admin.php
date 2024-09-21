@@ -2,6 +2,7 @@
 
 use Tabuna\Breadcrumbs\Trail;
 use App\Http\Controllers\Backend\DashboardController;
+use App\Domains\Slide\Http\Controllers\SlideController;
 use App\Domains\Article\Http\Controllers\Backend\ArticleController;
 
 // All route names are prefixed with 'admin.'.
@@ -37,3 +38,7 @@ Route::get('articles/{article}/edit', [ArticleController::class, 'edit'])->name(
     });
 Route::patch('articles/{article}/update', [ArticleController::class, 'update'])->name('article.update');
 Route::delete('articles/{article}/delete', [ArticleController::class, 'delete'])->name('article.delete');
+
+Route::patch('slides/{slide}/update', [SlideController::class, 'update'])->name('slide.update');
+Route::get('slides/{slide}/enable', [SlideController::class, 'enable'])->name('slide.enable');
+Route::get('slides/{slide}/disable', [SlideController::class, 'disable'])->name('slide.disable');
