@@ -26,128 +26,28 @@
             <h1 class="mb-0">Retrouvrez toutes l'actualités de PAPSA</h1>
         </div>
         <div class="row g-4">
+            @foreach ($articles as $article)
             <div class="col-lg-6 col-xl-3">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
+                        <img src="{{ asset('storage/' . $article->image)  }}" class="img-fluid w-100" alt="">
                         <div class="blog-info">
-                            <span><i class="fa fa-clock"></i>1 Dec 2024</span>
+                            <span><i class="fa fa-clock"></i> <small> {{ $article->created_at }}</small></span>
                         </div>
                     </div>
                     <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i>1 Dec 2024</span>
+                        <div class="mb-4">
+                            <a href="{{ route('frontend.posts.show', $article) }}" class="fw-bolder">{{ $article->title }}</a>
+                        </div>
+                        <div>
+                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.show', $article) }}">Voir plus</a>
                         </div>
                     </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i>1 Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i>1 Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> 1 Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-2.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> 1 Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-3.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> 1 Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="blog-item">
-                    <div class="blog-img">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100" alt="">
-                        <div class="blog-info">
-                            <span><i class="fa fa-clock"></i> 1 Dec 2024</span>
-                        </div>
-                    </div>
-                    <div class="text-dark border p-4 ">
-                        <a href="#" class="mb-4 h4">Save The Topic Forests</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
+        {{ $articles->links() }}
     </div>
 </div>
 <!-- Blog End -->

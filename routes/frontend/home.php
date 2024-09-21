@@ -45,4 +45,4 @@ Route::prefix('programes/')->name('programmes.')->group(function () {
 
 // Actualités
 Route::get('posts', [PostController::class, 'index'])->name('posts.index');
-Route::get('posts/{post}', [PostController::class, 'show'])->name('posts.show');
+Route::get('posts/{article}', [PostController::class, 'show'])->name('posts.show');

@@ -129,16 +129,16 @@
         </div>
         <div class="event-carousel owl-carousel">
             <div class="event-item">
-                <img src="images/bm-logo.png" class="img-fluid w-100" alt="Image">
+                <img src="images/bm-logo500.png" class="img-fluid w-100" alt="Image">
             </div>
             <div class="event-item">
-                <img src="images/logo-mfs.jpg" class="img-fluid w-100" alt="Image">
+                <img src="images/logo-mfs500.png" class="img-fluid w-100" alt="Image">
             </div>
             <div class="event-item">
-                <img src="images/logo-agriculture.jpg" class="img-fluid w-100" alt="Image">
+                <img src="images/logo-dgpsn500.png" class="img-fluid w-100" alt="Image">
             </div>
             <div class="event-item">
-                <img src="images/logo-dgpsn.png" class="img-fluid w-100" alt="Image">
+                <img src="images/logo-maer500.png" class="img-fluid w-100" alt="Image">
             </div>
         </div>
     </div>

@@ -8,6 +8,7 @@ use App\Models\Entreprise;
 use App\Models\Reclamation;
 use App\Models\Identification;
 use Illuminate\Database\Seeder;
+use Database\Seeders\SlideSeeder;
 use Illuminate\Database\Eloquent\Model;
 use Database\Seeders\Traits\TruncateTable;
 
@@ -35,7 +36,11 @@ class DatabaseSeeder extends Seeder
 
         // Seed des regions et departements
         $region = Region::create(['libele' => 'Dakar']);
-        $region->departements()->create(['libele' => 'Dakar']);
+        $departement = $region->departements()->create(['libele' => 'Dakar']);
+        // $departement->commune()-
+        // Partie commune commune_id
+            // Id_region
+            // Id_departement
         $region->departements()->create(['libele' => 'Guédiawaye']);
         $region->departements()->create(['libele' => 'Pikine']);
         $region->departements()->create(['libele' => 'Rufisque']);
@@ -118,6 +123,9 @@ class DatabaseSeeder extends Seeder
         Reclamation::create(['type' => false, 'libele' => 'Erreurs d\'exclusion']);
         Reclamation::create(['type' => false, 'libele' => 'Défaut de paiement']);
         Reclamation::create(['type' => false, 'libele' => 'Dénonciation (abus de pouvoir ou d\'autorité, fraude ou malversation, violence basée sur le genre']);
+
+        // Seed des Slides
+        $this->call(SlideSeeder::class);
 
         Model::reguard();
     }
