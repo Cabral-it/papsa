@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <a href="{{ route('frontend.posts.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.posts.index')) }}">Actualités</a>
-                            <a href="{{ route('frontend.media') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.media')) }}">Mediathéque</a>
+                            <a href="{{ route('frontend.media.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.media.index')) }}">Mediathéque</a>
                             {{-- <a href="events.html" class="nav-item nav-link">Events</a> --}}
                             {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                         </div>
