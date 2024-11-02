@@ -31,6 +31,8 @@ Route::get('articles/{article}', [ArticleController::class, 'show'])->name('arti
         $trail->push(__('Articles'), route('admin.article.index'));
         $trail->push(__('Prévisualiser un article'));
     });
+Route::post('articles/{article}/publish', [ArticleController::class, 'publish'])->name('article.publish');
+
 Route::get('articles/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit')
     ->breadcrumbs(function (Trail $trail) {
         $trail->push(__('Home'), route('admin.dashboard'));

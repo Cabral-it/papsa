@@ -48,5 +48,10 @@ class ArticleService extends BaseService
         Storage::disk('public')->delete($article->image);
         return $article->delete();
     }
+
+    public function togglePublish(Article $article)
+    {
+        return $article->update(['publish' => !$article->publish]);
+    }
 }
 
