@@ -4,6 +4,7 @@ use Tabuna\Breadcrumbs\Trail;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Domains\Slide\Http\Controllers\SlideController;
 use App\Domains\Article\Http\Controllers\Backend\ArticleController;
+use App\Domains\Mediatheque\Http\Controllers\Backend\MediaController;
 
 // All route names are prefixed with 'admin.'.
 Route::redirect('/', '/admin/dashboard', 301);
@@ -42,3 +43,9 @@ Route::delete('articles/{article}/delete', [ArticleController::class, 'delete'])
 Route::patch('slides/{slide}/update', [SlideController::class, 'update'])->name('slide.update');
 Route::get('slides/{slide}/enable', [SlideController::class, 'enable'])->name('slide.enable');
 Route::get('slides/{slide}/disable', [SlideController::class, 'disable'])->name('slide.disable');
+
+Route::get('medias', [MediaController::class, 'index'])->name('media.index');
+Route::post('medias', [MediaController::class, 'store'])->name('media.store');
+Route::get('medias/{media}/download', [MediaController::class, 'download'])->name('media.download');
+Route::get('medias/{media}/publish', [MediaController::class, 'publish'])->name('media.publish');
+Route::delete('medias/{media}/delete', [MediaController::class, 'delete'])->name('media.delete');

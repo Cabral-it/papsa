@@ -5,6 +5,7 @@ use App\Http\Controllers\PlainteController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\PostController;
 use App\Http\Controllers\Frontend\TermsController;
+use App\Domains\Mediatheque\Http\Controllers\Frontend\MediaController;
 
 /*
  * Frontend Controllers
@@ -33,7 +34,8 @@ Route::get('/plainte/dept/{id}', [PlainteController::class, 'getDepartement'])->
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 
 // Bibliotheque
-Route::get('/media', [HomeController::class, 'media'])->name('media');
+Route::get('/media', [MediaController::class, 'index'])->name('media.index');
+Route::get('/media/{media}/download', [MediaController::class, 'download'])->name('media.download');
 
 // Les programmes
 Route::prefix('programes/')->name('programmes.')->group(function () {

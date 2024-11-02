@@ -133,64 +133,6 @@
 </div>
 <!-- About End -->
 
-<!-- Services Start -->
-{{-- <div class="container-fluid service py-5 bg-light">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">What we do</h5>
-            <h1 class="mb-0">What we do to protect environment</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="service-item">
-                    <img src="img/service-1.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0">Raising money to help</a>
-                    </div>
-                </div>
-                <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="service-item">
-                    <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0"> close work with services</a>
-                    </div>
-                </div>
-                <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="service-item">
-                    <img src="img/service-3.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0">Pro Guided tours only</a>
-                    </div>
-                </div>
-                <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-            </div>
-            <div class="col-md-6 col-lg-6 col-xl-3">
-                <div class="service-item">
-                    <img src="img/service-4.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="service-link">
-                        <a href="#" class="h4 mb-0">Protecting animal area</a>
-                    </div>
-                </div>
-                <p class="my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                </p>
-            </div>
-            <div class="col-12">
-                <div class="d-flex align-items-center justify-content-center">
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<!-- Services End -->
-
 <!-- Blog Start -->
 <div class="container-fluid blog py-5 mb-5">
     <div class="container py-5">
@@ -229,64 +171,6 @@
     </div>
 </div>
 <!-- Blog End -->
-
-<!-- Actualites Start -->
-{{--
-<div class="container-fluid donation py-5">
-    <div class="container">
-        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">Actualités</h5>
-            <h1 class="mb-0">Dernières nouvelles</h1>
-        </div>
-        <div class="row g-4">
-            @foreach ($articles as $article)
-                <div class="col-lg-4">
-                    <div class="donation-item">
-                        <img src="{{ asset('storage/' . $article->image) }}" class="img-fluid w-100" alt="Image">
-                        <div class="donation-content d-flex flex-column">
-                            <h5 class="text-uppercase text-primary mb-4"><a href="{{ route('frontend.posts.show', $article) }}" class="btn-hover-color text-white">{{ $article->title }}</a></h5>
-                            <div class="donation-btn d-flex align-items-center justify-content-start">
-                                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.show', $article) }}">Voir plus</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            @endforeach
-            <div class="col-lg-4">
-                <div class="donation-item">
-                    <img src="img/service-2.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="donation-content d-flex flex-column">
-                        <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
-
-
-                        <div class="donation-btn d-flex align-items-center justify-content-start">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="donation-item">
-                    <img src="img/donation-3.jpg" class="img-fluid w-100" alt="Image">
-                    <div class="donation-content d-flex flex-column">
-                        <h5 class="text-uppercase text-primary mb-4"><a href="#" class="btn-hover-color text-white">Le Ministère De La Famille Et Des Solidarités Évalue Le Registre National Unique (RNU)</a></h5>
-
-                        <div class="donation-btn d-flex align-items-center justify-content-start">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Voir plus</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="d-flex align-items-center justify-content-center">
-                    <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="{{ route('frontend.posts.index') }}">Plus d'actualités</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
---}}
-<!-- Actualites End -->
 
 <!-- Counter Start -->
 <div class="container-fluid counter py-5" style="background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, 0.4)), url(img/volunteers-bg.jpg) center center; background-size: cover;">
@@ -347,117 +231,6 @@
 </div>
 <!-- Counter End -->
 
-<!-- Causes Start -->
-{{-- <div class="container-fluid causes py-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
-            <h5 class="text-uppercase text-primary">Recent Causes</h5>
-            <h1 class="mb-4">The environment needs our protection</h1>
-            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-            </p>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-4.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>Goal: $3600</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>Raised: $4000</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">Donate Now</a>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
-                            <span>65%</span>
-                        </div>
-                    </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">First environments activity of</h4>
-                        <p class="mb-4">Help today because tomorrow you may be the one who needs more helping!</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-2.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>Goal: $3600</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>Raised: $4000</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">Donate Now</a>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">Build school for poor children.</h4>
-                        <p class="mb-4">Help today because tomorrow you may be the one who needs more helping!</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-3.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>Goal: $3600</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>Raised: $4000</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">Donate Now</a>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                            <span>85%</span>
-                        </div>
-                    </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">Building clean-water system for rural poor.</h4>
-                        <p class="mb-4">Help today because tomorrow you may be the one who needs more helping!</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-3">
-                <div class="causes-item">
-                    <div class="causes-img">
-                        <img src="img/causes-1.jpg" class="img-fluid w-100" alt="Image">
-                        <div class="causes-link pb-2 px-3">
-                            <small class="text-white"><i class="fas fa-chart-bar text-primary me-2"></i>Goal: $3600</small>
-                            <small class="text-white"><i class="fa fa-thumbs-up text-primary me-2"></i>Raised: $4000</small>
-                        </div>
-                        <div class="causes-dination p-2">
-                            <a class="btn-hover-bg btn btn-primary text-white py-2 px-3" href="#">Donate Now</a>
-                        </div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                            <span>95%</span>
-                        </div>
-                    </div>
-                    <div class="causes-content p-4">
-                        <h4 class="mb-3">First environments activity of this summer.</h4>
-                        <p class="mb-4">Help today because tomorrow you may be the one who needs more helping!</p>
-                        <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<!-- Causes End -->
-
 <!-- Partenaires Start -->
 <div class="container-fluid event py-5">
     <div class="container">
@@ -482,144 +255,62 @@
 </div>
 <!-- Partenaires End -->
 
-
-
 <!-- Gallery Start -->
 <div class="container-fluid gallery py-5 px-0">
     <div class="text-center mx-auto pb-5" style="max-width: 800px;">
         <h5 class="text-uppercase text-primary">Médiathéque</h5>
-        <h1 class="mb-4">Quelques réalisations</h1>
-        {{-- <p class="mb-0">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.</p> --}}
+        <h1 class="mb-4">Documents, images et vidéos</h1>
     </div>
+    {{-- Documents --}}
+    <div class="container">
+        <table class="table">
+            <tbody>
+                @foreach ($medias['documents'] as $document)
+                <tr>
+                    <td><img src="{{ asset('images/pdf.png') }}" alt="pdf" class="img" width="32px" height="auto"></td>
+                    <td>{{ $document->title }}</td>
+                    <td>
+                        <a href="{{ route('frontend.media.download', $document) }}" data-target="_blank" class="btn btn-sm btn-primary m-1">Télécharger</a>
+                    </td>
+                </tr>
+                @endforeach
+            </tbody>
+        </table>
+        <div class="d-flex justify-content-center">{{ $medias['documents']->links() }}</div>
+    </div>
+    {{-- Images --}}
     <div class="row g-0">
+        @foreach ($medias['images'] as $image)
         <div class="col-lg-4">
             <div class="gallery-item">
-                <img src="img/gallery-2.jpg" class="img-fluid w-100" alt="">
+                <img src="{{ asset('storage/' . $image->file) }}" class="img-fluid w-100" alt="{{ $image->title }}">
                 <div class="search-icon">
-                    <a href="img/gallery-2.jpg" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
+                    <a href="{{ asset('storage/' . $image->file) }}" data-lightbox="gallery-2" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
                 </div>
                 <div class="gallery-content">
-                    <div class="gallery-inner pb-5">
-                        <a href="#" class="h4 text-white">Beauty Of Life</a>
-                        <a href="#" class="text-white"><p class="mb-0">Gallery Name</p></a>
-                    </div>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="img/gallery-3.jpg" class="img-fluid w-100" alt="">
-                <div class="search-icon">
-                    <a href="img/gallery-3.jpg" data-lightbox="gallery-3" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                </div>
-                <div class="gallery-content">
-                    <div class="gallery-inner pb-5">
-                        <a href="#" class="h4 text-white">Beauty Of Life</a>
-                        <a href="#" class="text-white"><p class="mb-0">Gallery Name</p></a>
+                    <div class="gallery-inner pb-3">
+                        {{-- <a href="#" class="h4 text-white">{{ $image->title }}</a> --}}
+                        <a href="#" class="text-white"><p class="mb-0">{{ $image->title }}</p></a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-4">
-            <div class="gallery-item">
-                <img src="img/gallery-1.jpg" class="img-fluid w-100" alt="">
-                <div class="search-icon">
-                    <a href="img/gallery-1.jpg" data-lightbox="gallery-1" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                </div>
-                <div class="gallery-content">
-                    <div class="gallery-inner pb-5">
-                        <a href="#" class="h4 text-white">Beauty Of Life</a>
-                        <a href="#" class="text-white"><p class="mb-0">Gallery Name</p></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4">
-            <div class="gallery-item">
-                <img src="img/gallery-4.jpg" class="img-fluid w-100" alt="">
-                <div class="search-icon">
-                    <a href="img/gallery-4.jpg" data-lightbox="gallery-4" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                </div>
-                <div class="gallery-content">
-                    <div class="gallery-inner pb-5">
-                        <a href="#" class="h4 text-white">Beauty Of Life</a>
-                        <a href="#" class="text-white"><p class="mb-0">Gallery Name</p></a>
-                    </div>
+        @endforeach
+    </div>
+    {{-- Videos --}}
+    <div class="container mt-5">
+        <h3 class="text-primary text-uppercase mb-2">Vidéos</h3>
+        <div class="event-carousel owl-carousel">
+            @foreach ($medias['videos'] as $video)
+            <div class="event-item">
+                <div class="p-2 text-center embed-responsive embed-responsive-16by9">
+                    <video src="{{ asset('storage/' . $video->file) }}" controls class="w-100 embed-responsive-item"></video>
                 </div>
             </div>
-            <div class="gallery-item">
-                <img src="img/gallery-5.jpg" class="img-fluid w-100" alt="">
-                <div class="search-icon">
-                    <a href="img/gallery-5.jpg" data-lightbox="gallery-5" class="my-auto"><i class="fas fa-search-plus btn-hover-color bg-white text-primary p-3"></i></a>
-                </div>
-                <div class="gallery-content">
-                    <div class="gallery-inner pb-5">
-                        <a href="#" class="h4 text-white">Beauty Of Life</a>
-                        <a href="#" class="text-white"><p class="mb-0">Gallery Name</p></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
+
 </div>
 <!-- Gallery End -->
-
-<!-- Volunteers Start -->
-{{-- <div class="container-fluid volunteer py-5 mt-5">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-5">
-                <div class="row g-4">
-                    <div class="col-lg-6">
-                        <div class="volunteer-img">
-                            <img src="img/volunteers-1.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="volunteer-title">
-                                <h5 class="mb-2 text-white">Michel Brown</h5>
-                                <p class="mb-0 text-white">Communicator</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="volunteer-img">
-                            <img src="img/volunteers-3.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="volunteer-title">
-                                <h5 class="mb-2 text-white">Michel Brown</h5>
-                                <p class="mb-0 text-white">Communicator</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="volunteer-img">
-                            <img src="img/volunteers-2.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="volunteer-title">
-                                <h5 class="mb-2 text-white">Michel Brown</h5>
-                                <p class="mb-0 text-white">Communicator</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="volunteer-img">
-                            <img src="img/volunteers-4.jpg" class="img-fluid w-100" alt="Image">
-                            <div class="volunteer-title">
-                                <h5 class="mb-2 text-white">Michel Brown</h5>
-                                <p class="mb-0 text-white">Communicator</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-7">
-                <h5 class="text-uppercase text-primary">Become a Volunteer?</h5>
-                <h1 class="mb-4">Join your hand with us for a better life and beautiful future.</h1>
-                <p class="mb-4">Lorem ipsum dolor sit amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor amet consectur adip sed eiusmod amet consectur adip sed eiusmod tempor.
-                </p>
-                <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> We are friendly to each other.</p>
-                <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> If you join with us,We will give you free training.</p>
-                <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> Its an opportunity to help poor Environments.</p>
-                <p class="text-dark"><i class=" fa fa-check text-primary me-2"></i> No goal requirements.</p>
-                <p class="text-dark mb-5"><i class=" fa fa-check text-primary me-2"></i> Joining is tottaly free. We dont need any money from you.</p>
-                <a class="btn-hover-bg btn btn-primary text-white py-2 px-4" href="#">Join With Us</a>
-            </div>
-        </div>
-    </div>
-</div> --}}
-<!-- Volunteers End -->
 @endsection

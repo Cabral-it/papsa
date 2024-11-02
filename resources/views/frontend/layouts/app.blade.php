@@ -89,7 +89,7 @@
                                 </div>
                             </div>
                             <a href="{{ route('frontend.posts.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.posts.index')) }}">Actualités</a>
-                            <a href="{{ route('frontend.media') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.media')) }}">Mediathéque</a>
+                            <a href="{{ route('frontend.media.index') }}" class="nav-item nav-link {{ activeClass(Route::is('frontend.media.index')) }}">Mediathéque</a>
                             {{-- <a href="events.html" class="nav-item nav-link">Events</a> --}}
                             {{-- <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
                         </div>
@@ -218,7 +218,7 @@
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-4 text-center text-md-start mb-md-0">
-                        <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>papsa.sn</a>, Tous droits reservés.</span>
+                        <span class="text-body"><a href="{{ route('admin.dashboard') }}" target="_blank"><i class="fas fa-copyright text-light me-2"></i>papsa.sn</a>, Tous droits reservés.</span>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="d-flex align-items-center justify-content-center">
