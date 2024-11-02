@@ -299,7 +299,6 @@
     </div>
     {{-- Videos --}}
     <div class="container mt-5">
-        <h3 class="text-primary text-uppercase mb-2">Vidéos</h3>
         <div class="event-carousel owl-carousel">
             @foreach ($medias['videos'] as $video)
             <div class="event-item">

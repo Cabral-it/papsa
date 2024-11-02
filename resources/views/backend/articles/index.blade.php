@@ -38,9 +38,16 @@
                     </td>
                     <td>
                         <a href="{{ route('admin.article.show', $article) }}" class="btn btn-info m-1">Voir</a>
+
                         @if ($article->publish == false)
-                        <a href="#" class="btn btn-success m-1">Publier</a>
+                        <a href="#" class="btn btn-success m-1" onclick="event.preventDefault();document.getElementById('delete_article_{{ $article->id }}').submit();">Publier</a>
+                        @else
+                        <a href="#" class="btn btn-secondary m-1" onclick="event.preventDefault();document.getElementById('delete_article_{{ $article->id }}').submit();">Cacher</a>
                         @endif
+                        <form action="{{ route('admin.article.publish', $article) }}" class="d-none" id="delete_article_{{ $article->id }}" method="POST">
+                            @csrf
+                            @method('POST')
+                        </form>
                         <a href="{{ route('admin.article.edit', $article) }}" class="btn btn-warning m-1">Modifier</a>
                         {{-- <a href="#" class="btn btn-danger m-1">Supprimer</a> --}}
                         <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#deleteArticle{{ $article->id }}">
