@@ -43,6 +43,13 @@ class ArticleController extends Controller
 
     }
 
+    public function publish(Request $request, Article $article, ArticleService $articleService)
+    {
+        if ($articleService->togglePublish($article))
+            $action = $article->refresh()->publish ? 'publier' : 'Caché';
+            return redirect()->route('admin.article.index')->with(["flash_success" => "L'article a bien été " . $action]);
+    }
+
     public function show(Article $article)
     {
         return view('backend.articles.show', compact('article'));

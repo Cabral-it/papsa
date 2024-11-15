@@ -1,6 +1,7 @@
 <?php
 
 use Tabuna\Breadcrumbs\Trail;
+use App\Domains\Newsletter\Http\NewsletterController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Domains\Slide\Http\Controllers\SlideController;
 use App\Domains\Article\Http\Controllers\Backend\ArticleController;
@@ -31,6 +32,7 @@ Route::get('articles/{article}', [ArticleController::class, 'show'])->name('arti
         $trail->push(__('Articles'), route('admin.article.index'));
         $trail->push(__('Prévisualiser un article'));
     });
+Route::post('articles/{article}/publish', [ArticleController::class, 'publish'])->name('article.publish');
 Route::get('articles/{article}/edit', [ArticleController::class, 'edit'])->name('article.edit')
     ->breadcrumbs(function (Trail $trail) {
         $trail->push(__('Home'), route('admin.dashboard'));
@@ -49,3 +51,8 @@ Route::post('medias', [MediaController::class, 'store'])->name('media.store');
 Route::get('medias/{media}/download', [MediaController::class, 'download'])->name('media.download');
 Route::get('medias/{media}/publish', [MediaController::class, 'publish'])->name('media.publish');
 Route::delete('medias/{media}/delete', [MediaController::class, 'delete'])->name('media.delete');
+
+Route::get('newsletters', [NewsletterController::class, 'index'])->name('newsletter.index');
+Route::post('newsletters/store', [NewsletterController::class, 'store'])->name('newsletter.store');
+Route::get('newsletters/{newsletter}', [NewsletterController::class, 'show'])->name('newsletter.show');
+Route::delete('newsletters/{newsletter}/delete', [NewsletterController::class, 'delete'])->name('newsletter.delete');
