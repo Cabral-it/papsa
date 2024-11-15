@@ -124,8 +124,12 @@
                             </p>
                             <p>Restez informez de tous activités du projet</p>
                             <div class="position-relative mx-auto">
-                                <input class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Entrez votre email">
-                                <button type="button" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">S'inscrire</button>
+                                <form action="{{ route('frontend.newsletter.signup') }}" method="post">
+                                    @csrf
+                                    @method('post')
+                                    <input name="email" class="form-control border-0 bg-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Entrez votre email">
+                                    <button type="submit" class="btn-hover-bg btn btn-primary position-absolute top-0 end-0 py-2 mt-2 me-2">S'inscrire</button>
+                                </form>
                             </div>
                         </div>
                     </div>

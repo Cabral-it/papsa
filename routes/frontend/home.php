@@ -48,3 +48,6 @@ Route::prefix('programes/')->name('programmes.')->group(function () {
 // Actualités
 Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('posts/{article}', [PostController::class, 'show'])->name('posts.show');
+
+// Newsletter
+Route::post('newsletter/sign_up', [HomeController::class, 'signup'])->name('newsletter.signup');
