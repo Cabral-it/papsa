@@ -238,18 +238,12 @@
             <h5 class="text-uppercase text-primary">Nos partenaires</h5>
         </div>
         <div class="event-carousel owl-carousel">
+            @foreach ($parteners as $partener)
             <div class="event-item">
-                <img src="images/bm-logo500.png" class="img-fluid w-100" alt="Image">
+                <img src="{{ asset('storage/' . $partener->logo) }}" class="img-fluid w-100" alt="Image">
             </div>
-            <div class="event-item">
-                <img src="images/logo-mfs500.png" class="img-fluid w-100" alt="Image">
-            </div>
-            <div class="event-item">
-                <img src="images/logo-dgpsn500.png" class="img-fluid w-100" alt="Image">
-            </div>
-            <div class="event-item">
-                <img src="images/logo-maer500.png" class="img-fluid w-100" alt="Image">
-            </div>
+            @endforeach
+
         </div>
     </div>
 </div>
