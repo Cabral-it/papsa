@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Domains\Slide\Services\SlideService;
 use App\Domains\Article\Services\ArticleService;
 use App\Domains\Mediatheque\Services\MediaService;
+use App\Domains\Partener\Services\PartenerService;
 use App\Domains\Newsletter\Services\NewsLetterService;
 
 
@@ -21,18 +22,20 @@ class HomeController extends Controller
     public function index(
         ArticleService $articleService,
         SlideService $slideService,
-        MediaService $mediaService
+        MediaService $mediaService,
+        PartenerService $partenerService
     )
     {
         $articles = $articleService->published()->limit(3)->get();
         $slides = $slideService->published()->get();
+        $parteners = $partenerService->all();
         $medias = [
             'documents' => $mediaService->documents()->paginate(2),
             'images' => $mediaService->images()->limit(3)->get(),
             'videos' => $mediaService->videos()->limit(3)->get(),
         ];
 
-        return view('frontend.index', compact('articles', 'slides', 'medias'));
+        return view('frontend.index', compact('articles', 'slides', 'medias', 'parteners'));
     }
 
     public function about()

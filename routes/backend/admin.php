@@ -5,6 +5,7 @@ use App\Domains\Newsletter\Http\NewsletterController;
 use App\Http\Controllers\Backend\DashboardController;
 use App\Domains\Slide\Http\Controllers\SlideController;
 use App\Domains\Article\Http\Controllers\Backend\ArticleController;
+use App\Domains\Partener\Http\Controllers\Backend\PartenerController;
 use App\Domains\Mediatheque\Http\Controllers\Backend\MediaController;
 
 // All route names are prefixed with 'admin.'.
@@ -56,3 +57,9 @@ Route::get('newsletters', [NewsletterController::class, 'index'])->name('newslet
 Route::post('newsletters/store', [NewsletterController::class, 'store'])->name('newsletter.store');
 Route::get('newsletters/{newsletter}', [NewsletterController::class, 'show'])->name('newsletter.show');
 Route::delete('newsletters/{newsletter}/delete', [NewsletterController::class, 'delete'])->name('newsletter.delete');
+
+Route::prefix('section/')->name('section.')->group(function(){
+    Route::get('parteners', [PartenerController::class, 'index'])->name('partener.index');
+    Route::post('partener/store', [PartenerController::class, 'store'])->name('partener.store');
+    Route::delete('partener/{partener}/delete', [PartenerController::class, 'delete'])->name('partener.delete');
+});
